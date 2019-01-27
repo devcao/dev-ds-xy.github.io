@@ -7,10 +7,13 @@ layout: default
 I am Xiangyang Cao, 3rd year PhD student in [Department of Statistics](https://sc.edu/study/colleges_schools/artsandsciences/statistics/index.php), [University of South Carolina](https://sc.edu/), advised by [Prof. Karl Gregory](http://people.stat.sc.edu/gregorkb/) and [Prof. Dewei Wang](http://people.stat.sc.edu/wang528/index.html)
 
 My reseach interest lies in High-dimensional inference and Statistical machine learning. 
+I am currently working on:
 
-[Link to another page](./another-page.html).
+* A path related method to provide p-values for high-dimensional linear models.
+* A unified framework for calculating variable importance/feature importance for regularization methods.
 
-# Research
+
+# Publications
 
 * Cao, X, Gregory, K.B, Wang, D, A generalized framework for high-dimensional inference using Leave-One-Covariate-Out regularization path, ready to submit.
 
