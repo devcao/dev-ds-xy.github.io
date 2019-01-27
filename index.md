@@ -27,7 +27,8 @@ I am currently working on:
   - An extension of LOCO regularization path to GLM, cox PH and graphical models.
 
 
-* Cao, X, Gregory, K.B, Generalized L1$ regularization for Mixture Regression Models, manuscript in preparation.
+
+* Cao, X, Gregory, K.B, Generalized L1 regularization for Mixture Regression Models, manuscript in preparation.
   
   - Use generalized LASSO penalty to adaptively control different components of mixture.
 
