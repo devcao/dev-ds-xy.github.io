@@ -12,6 +12,23 @@ My reseach interest lies in High-dimensional inference and Statistical machine l
 
 # Research
 
+* Cao,~X,~Gregory,~K.B,~Wang,~D, A generalized framework for high-dimensional inference using Leave-One-Covariate-Out regularization path, ready to submit.
+
+  - Our procedure allows for calculating variable importance, variable screening/selection and statistical inference. Test statistics constructed by calculating the change in LASSO solution path. P-values are estimated by bootstrapping the null distribution. 
+  
+  - [Link to R package **LOCOpath**](https://github.com/statcao/LOCOpath). 
+
+* Cao,~X,~Gregory,~K.B,~Wang,~D, Leave-One-Covariate-Out regularization path on Generalized Linear Models, Cox models and Gaussian Graphical Models, manuscript in preparation.
+
+  - An extension of LOCO regularization path to GLM, cox PH and graphical models.
+
+* Cao,~X,~Gregory,~K.B, Generalized L1$ regularization for Mixture Regression Models, manuscript in preparation.
+  
+  - Use generalized LASSO penalty to adaptively control different components of mixture.
+
+
 # Teaching
 
-# Contact
+[STAT 201 Spring 2019](./teaching) 
+STAT 201 Spring 2018
+
