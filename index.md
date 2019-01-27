@@ -9,7 +9,7 @@ I am Xiangyang Cao, 3rd year PhD student in [Department of Statistics](https://s
 My reseach interest lies in High-dimensional inference and Statistical machine learning. 
 I am currently working on:
 
-* A path related method to provide p-values for high-dimensional linear models.
+* A regularization path i.e, LASSO solution path, SCAD solution path and etc. related method to provide p-values for high-dimensional linear models.
 * A unified framework for calculating variable importance/feature importance for regularization methods.
 
 
