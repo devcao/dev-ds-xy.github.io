@@ -1,5 +1,6 @@
 title: Hi, I am Xiangyang
 description: PhD in Statistics, working on high-dimensional statistics and statistical machine learning
 show_downloads: false
+show_link:True
 google_analytics:
 theme: jekyll-theme-cayman
