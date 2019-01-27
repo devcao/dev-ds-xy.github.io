@@ -23,13 +23,11 @@ I am currently working on:
 
 
 * Cao, X, Gregory, K.B, Wang, D, Leave-One-Covariate-Out regularization path on Generalized Linear Models, Cox models and Gaussian Graphical Models, manuscript in preparation.
-
   - An extension of LOCO regularization path to GLM, cox PH and graphical models.
 
 
 * Cao, X, Gregory, K.B, Generalized L1$ regularization for Mixture Regression Models, manuscript in preparation.
-  
-  - Use generalized LASSO penalty to adaptively control different components of mixture.
+    - Use generalized LASSO penalty to adaptively control different components of mixture.
 
 
 # Teaching
