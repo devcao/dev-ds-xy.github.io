@@ -32,6 +32,5 @@ I am currently working on:
 
 # Teaching
 
-[STAT 201 Spring 2019](./teaching) 
-STAT 201 Spring 2018
-
+* [STAT 201 Spring 2019](./teaching) 
+* STAT 201 Spring 2018
