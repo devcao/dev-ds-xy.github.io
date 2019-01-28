@@ -9,8 +9,8 @@ I am Xiangyang Cao, 3rd year PhD student in [Department of Statistics](https://s
 My reseach interest lies in High-dimensional inference and Statistical machine learning. 
 I am currently working on:
 
-* A regularization path i.e, LASSO solution path, SCAD solution path and etc. related method to provide p-values for high-dimensional linear models.
-* A unified framework for calculating variable importance/feature importance for regularization methods.
+* A regularization path i.e, LASSO, SCAD, Elastic Net solution path and etc. related method to provide p-values for high-dimensional models.
+* A unified framework for calculating variable importance/feature importance for machine learning algorithms involving regularization.
 
 
 # Publications
@@ -18,7 +18,7 @@ I am currently working on:
 * **Cao, X, Gregory, K.B, Wang, D, A generalized framework for high-dimensional inference using Leave-One-Covariate-Out regularization path**, ready to submit.
 
   - Our procedure allows for calculating variable importance, variable screening/selection and statistical inference. Test statistics constructed by calculating the change in LASSO solution path. P-values are estimated by bootstrapping the null distribution. 
-  
+  - We may outperform the state-of-the-art.
   - [Link to R package **LOCOpath**](https://github.com/statcao/LOCOpath). 
 
 
