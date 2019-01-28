@@ -19,6 +19,10 @@ Lecturer and TAs
   - Section Y02: Ibraheem Kolawole Adams
   - Section Y03: Caroline Marie Kerfonta
 
+Syllabus
+------
+* [STAT 201 Spring 2019].(./Syllabus_Spring_2019.pdf)
+
 
 
 Slides
