@@ -21,7 +21,7 @@ Lecturer and TAs
 
 Syllabus
 ------
-* [STAT 201 Spring 2019].(./Syllabus_Spring_2019.pdf)
+* [STAT 201 Spring 2019](./Syllabus_Spring_2019.pdf)
 
 
 
