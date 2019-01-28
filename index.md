@@ -19,7 +19,7 @@ I am currently working on:
 
   - Our procedure allows for calculating variable importance, variable screening/selection and statistical inference. Test statistics constructed by calculating the change in LASSO solution path. P-values are estimated by bootstrapping the null distribution. 
   - We may outperform the [state-of-the-art](https://arxiv.org/pdf/1303.0518.pdf).
-  - [Link to R package **LOCOpath**](https://github.com/statcao/LOCOpath). 
+  - R package [**LOCOpath**](https://github.com/statcao/LOCOpath) available. 
 
 
 * **Cao, X, Gregory, K.B, Wang, D, Leave-One-Covariate-Out regularization path on Generalized Linear Models, Cox models and Gaussian Graphical Models**, manuscript in preparation.
