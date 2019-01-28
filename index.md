@@ -18,7 +18,7 @@ I am currently working on:
 * **Cao, X, Gregory, K.B, Wang, D, A generalized framework for high-dimensional inference using Leave-One-Covariate-Out regularization path**, ready to submit.
 
   - Our procedure allows for calculating variable importance, variable screening/selection and statistical inference. Test statistics constructed by calculating the change in LASSO solution path. P-values are estimated by bootstrapping the null distribution. 
-  - We may outperform the state-of-the-art.
+  - We may outperform the [state-of-the-art](https://arxiv.org/pdf/1303.0518.pdf).
   - [Link to R package **LOCOpath**](https://github.com/statcao/LOCOpath). 
 
 
