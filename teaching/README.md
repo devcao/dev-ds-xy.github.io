@@ -48,6 +48,8 @@ Course Materials
   </tr>
 </table>
 
+* [Lecture 1 slides](./Chapter_1_2.slides.html)
+
 
 Textbooks
 ------
