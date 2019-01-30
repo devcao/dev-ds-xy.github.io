@@ -9,13 +9,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+
 <title>Chapter_3 slides</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.min.css" integrity="sha256-vPN+adnQKmyGqQAeBNs9+GBYVx8uQETV+DAdAXG0XBg=" crossorigin="anonymous" />
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -13226,7 +13228,7 @@ a.anchor-link {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<!-- <link rel="stylesheet" href="custom.css"> -->
+<link rel="stylesheet" href="custom.css">
 
 </head>
 
@@ -13288,7 +13290,15 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt"></div><div></div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://en.wikipedia.org/wiki/Contingency_table&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
 </div>
 
 <div class="output_wrapper">
@@ -13296,11 +13306,11 @@ a.anchor-link {
 
 
 <div class="output_area">
-    
-        <div class="prompt"></div>
-        
-	
-            
+
+    <div class="prompt output_prompt">Out[69]:</div>
+
+
+
 <div class="output_html rendered_html output_subarea output_execute_result">
 
         <iframe
@@ -13312,8 +13322,8 @@ a.anchor-link {
         ></iframe>
         
 </div>
- 
-             </div>
+
+</div>
 
 </div>
 </div>
@@ -13595,7 +13605,30 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt"></div><div></div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">X</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LinearRegression</span>
+<span class="n">regr</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y_pred</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
 </div>
 
 <div class="output_wrapper">
@@ -13603,32 +13636,32 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
 
 
 <div class="output_area">
-    
-        <div class="prompt"></div>
-        
-	
-            
+
+    <div class="prompt output_prompt">Out[73]:</div>
+
+
+
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[&lt;matplotlib.lines.Line2D at 0x1a269372e8&gt;]</pre>
 </div>
- 
-             </div>
+
+</div>
 
 <div class="output_area">
-    
-        <div class="prompt"></div>
-        
-	
-            
 
-<div class="output_png output_subarea output_execute_result">
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,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
 "
 >
 </div>
- 
-             </div>
+
+</div>
 
 </div>
 </div>
@@ -13650,7 +13683,14 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt"></div><div></div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;http://tylervigen.com/spurious-correlations&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">450</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
 </div>
 
 <div class="output_wrapper">
@@ -13658,11 +13698,11 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
 
 
 <div class="output_area">
-    
-        <div class="prompt"></div>
-        
-	
-            
+
+    <div class="prompt output_prompt">Out[70]:</div>
+
+
+
 <div class="output_html rendered_html output_subarea output_execute_result">
 
         <iframe
@@ -13674,8 +13714,8 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
         ></iframe>
         
 </div>
- 
-             </div>
+
+</div>
 
 </div>
 </div>
@@ -13693,12 +13733,6 @@ assign x = 0 to the explanatory variable, a does not have a specific meaning.</l
 
 <script>
 
-requirejs.config({
-  paths: {
-    'reveal': ['https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.min']
-  }
-});
-
 require(
     {
       // it makes sense to wait a little bit when you are loading
@@ -13706,27 +13740,28 @@ require(
       waitSeconds: 15
     },
     [
-      'reveal'
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/js/reveal.js"
     ],
 
-    function(Reveal){
+    function(head, Reveal){
 
         // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
             controls: true,
             progress: true,
-            history: true
+            history: true,
 
-            //transition: "slide",
+            transition: "slide",
 
             // Optional libraries used to extend on reveal.js
-            //dependencies: [
-            //    { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
-            //      condition: function() { return !document.body.classList; } },
-            //    { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
-            //      async: true,
-            //      condition: function() { return !!document.body.classList; } }
-            //]
+            dependencies: [
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/classList.js",
+                  condition: function() { return !document.body.classList; } },
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/plugin/notes/notes.js",
+                  async: true,
+                  condition: function() { return !!document.body.classList; } }
+            ]
         });
 
         var update = function(event){
