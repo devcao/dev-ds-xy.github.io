@@ -36,14 +36,14 @@ Course Materials
   </tr>
   <tr>
     <td>Jan 14th</td>
-    <td>[Lecture 1](./Chapter_1_2.slides.html)</td>
-    <td>[Lecture 1](./Chapter_1_2.html)</td>
+    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
+    <td><a href="./Chpter_1_2.html">Lecture 1 notes</td>
     <td>Basic introduction, data visualization, descriptive statistics</td>
   </tr>
   <tr>
     <td>Jan 28th</td>
-    <td>[Lecture 2](./Chapter_3.slides.html)</td>
-    <td>[Lecture 2](./Chapter_3.html)</td>
+    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
+    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
     <td>Contigency table, linear regression</td>
   </tr>
 </table>
