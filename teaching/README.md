@@ -27,28 +27,10 @@ Syllabus
 
 Course Materials
 ------
-<table>
-  <tr>
-    <td>Date</td>
-    <td>Slides</td>
-    <td>Notes</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>Jan 14th</td>
-    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
-    <td><a href="./Chpter_1_2.html">Lecture 1 notes</td>
-    <td>Basic introduction, data visualization, descriptive statistics</td>
-  </tr>
-  <tr>
-    <td>Jan 28th</td>
-    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
-    <td><a href="./Chpter_1_2.slides.html">Lecture 1 slides</a></td>
-    <td>Contigency table, linear regression</td>
-  </tr>
-</table>
 
 * [Lecture 1 slides](./Chapter_1_2.slides.html)
+* [Lecture 2 slides](./Chapter_3.slides.html)
+
 
 
 Textbooks
