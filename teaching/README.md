@@ -31,7 +31,10 @@ Course Materials
 | Date | Slides | Notes |
 | ------------ | ------------- | -------------- |
 | Jan 14th | [Lecture 1 slides](./Chapter_1_2.slides.html) | [Lecture 1 notes](./Chapter_1_2.html) |
+| Jan 21th | Holiday | Holiday |
 | Jan 28th | [Lecture 2 slides](./Chapter_3.slides.html) | [Lecture 2 notes](./Chapter_3.html) |
+| Feb 4th | Review Exam 1 | Review Exam 1 |
+| Feb 13th | [Lecture 3 slides](./Chapter_5.slides.html) | [Lecture 3 notes](./Chapter_5.html) |
 
 
 (Notes: the notes are generated automatically by the slides, basically they contains the same materials.)
