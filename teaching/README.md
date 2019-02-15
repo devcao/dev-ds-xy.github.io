@@ -35,6 +35,16 @@ Course Materials
 | Jan 28th | [Lecture 2 slides](./Chapter_3.slides.html) | [Lecture 2 notes](./Chapter_3.html) |
 | Feb 4th | Review Exam 1 | Review Exam 1 |
 | Feb 13th | [Lecture 3 slides](./Chapter_5.slides.html) | [Lecture 3 notes](./Chapter_5.html) |
+| Feb 18th | [Lecture 4 slides](./Chapter_6.slides.html) | [Lecture 4 notes](./Chapter_6.html) |
+| Feb 25th | Review Exam 2 | Review Exam 2 |
+| Mar 6th | [Lecture 5 slides](./Chapter_7.slides.html) | [Lecture 5 notes](./Chapter_7.html) |
+| Mar 18th | [Lecture 4 slides](./Chapter_8&9.slides.html) | [Lecture 4 notes](./Chapter_8&9.html) |
+| Mar 25th | [Lecture 4 slides](./Chapter_8&9.slides.html) | [Lecture 4 notes](./Chapter_8&9.html) |
+| Apr 1th | Review Exam 3 | Review Exam 3 |
+| Apr 8th | [Lecture 4 slides](./Chapter_8&9.slides.html) | [Lecture 4 notes](./Chapter_8&9.html) |
+| Apr 15th | [Lecture 4 slides](./Chapter_10.slides.html) | [Lecture 4 notes](./Chapter_10.html) |
+| Apr 22th | [Lecture 4 slides](./Chapter_10.slides.html) | [Lecture 4 notes](./Chapter_10.html) |
+| Apr 29th | Review Final Exam  | Review Final Exam |
 
 
 (Notes: the notes are generated automatically by the slides, basically they contains the same materials.)
