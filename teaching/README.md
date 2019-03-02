@@ -6,9 +6,9 @@ Class Meetings
 ------
 * Lectures: Mondays and Wednesdays, 5:50 - 7:40 PM, LC210
 * Labs: 
-  - Section Y01, Mondays, 5:50 – 7:40 PM, LC 200A
-  - Section Y02, Mondays, 5:50 – 7:40 PM, LC 205
-  - Section Y03, Mondays, 5:50 – 7:40 PM, LC 124
+  - Section Y01, Wed, 5:50 – 7:40 PM, LC 200A
+  - Section Y02, Wed, 5:50 – 7:40 PM, LC 205
+  - Section Y03, Wed, 5:50 – 7:40 PM, LC 124
 
 
 Lecturer and TAs
