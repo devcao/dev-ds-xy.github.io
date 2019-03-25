@@ -13162,7 +13162,7 @@ statistics ($\bar{x}$ or $\hat{p}$).</li>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-orgin-of-Hypothesis-Testing">The orgin of Hypothesis Testing<a class="anchor-link" href="#The-orgin-of-Hypothesis-Testing">&#182;</a></h2><ul>
+<h2 id="The-origin-of-Hypothesis-Testing">The origin of Hypothesis Testing<a class="anchor-link" href="#The-origin-of-Hypothesis-Testing">&#182;</a></h2><ul>
 <li><p>A famous example described by <strong>Ronald Fisher</strong>: Lady Tasting Tea.</p>
 </li>
 <li><p>Who is <strong>Ronald Fisher</strong>?</p>
@@ -13592,6 +13592,354 @@ $$</li>
 <li>As we lower the confidence level, margin of error decreases, and hence the confidence interval becomes <strong>narrower</strong>.</li>
 </ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Our-schedule---Updated">Our schedule - Updated<a class="anchor-link" href="#Our-schedule---Updated">&#182;</a></h2><ul>
+<li><p>Recall last week, we did the one sample inference about <strong>population proportion</strong> $p$</p>
+</li>
+<li><p>We will talk about one sample inference about <strong>population mean</strong> $\mu$ today, especially in the case
+  where we do not have a large sample ($n &lt; 30$).</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Review">Review<a class="anchor-link" href="#Review">&#182;</a></h2><ul>
+<li><p>Recall from Chapter 7, by the Central Limit Theorem (CLT), if we have a sample of size $n \geq 30$
+  from any population with unknown parameters mean $\mu$ and standard deviation $\sigma$, the sampling
+  distribution of the sample mean $\bar{X}$ is</p>
+<p>$$ \bar{X} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}})$$</p>
+</li>
+<li><p>Or equivalently,
+  $$ \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim \mathcal{N}(0, 1)   $$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Review">Review<a class="anchor-link" href="#Review">&#182;</a></h2><ul>
+<li><p>Actually, we can use the fact $ \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim \mathcal{N}(0, 1)  $ to make statistical inference, but</p>
+<ul>
+<li>We don't know the true value of $\sigma$.</li>
+<li>We need large sample size.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-will-we-do-then-?">What will we do then ?<a class="anchor-link" href="#What-will-we-do-then-?">&#182;</a></h2><ul>
+<li><p>For a normally distributed population with population mean $\mu$, a random sample of
+  size $n$ from this population with sample mean $\bar{X}$ and sample standard deviation $s$, we have 
+  the expression (t-score) $$t = \frac{\bar{X} - \mu}{s / \sqrt{n}}$$</p>
+<p>follows <strong>Student’s t-distribution</strong> with $(n − 1)$ degrees of freedom ($df$).</p>
+</li>
+<li>Or equivalently 
+  $$ t=\frac{\bar{X} - \mu}{s / \sqrt{n}} \sim T(n-1) $$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="T-distribution">T-distribution<a class="anchor-link" href="#T-distribution">&#182;</a></h2><div align=center>
+<img src="./t-dist.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Properties-of-t-distribution">Properties of t-distribution<a class="anchor-link" href="#Properties-of-t-distribution">&#182;</a></h2><ul>
+<li><p>Like the standard normal distribution, t-distribution is bell-shaped and symmetric about 0.</p>
+</li>
+<li><p>The shape of the density curve of t-distribution varies for each distinct value of df. Probabil-
+  ities and t-scores depend on the specific value of df, i.e. on the sample size.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Properties-of-t-distribution">Properties of t-distribution<a class="anchor-link" href="#Properties-of-t-distribution">&#182;</a></h2><ul>
+<li><p>Comparing to the standard normal distribution, t-distribution has more density at the tails,
+  and hence more variability. This is caused by replacing the fixed quantity σ with the random
+  quantity S. However, as the sample size n increases, the shape of t-distribution gradually
+  approaches that of a standard normal distribution.</p>
+</li>
+<li><p>The t-Distribution Table (or t-table for short) lists t-scores for certain values of right-tail
+  probabilities and df. We use tα to denote the t-score that has a right-tail probability
+  α. For instance, for $df = 1$, $t_{.100} = 3.0784$. This means $P(t &gt; 3.078) = .100$.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Why-it-is-call-student's-t-distribution?">Why it is call student's t distribution?<a class="anchor-link" href="#Why-it-is-call-student's-t-distribution?">&#182;</a></h2><ul>
+<li>A historical note: the name “Student’s t-distribution” comes from the early 20th century
+  statistician William Gosset, who spent much of his career as a chemist in the Guinness Breweries,
+  in the mean time publishing research papers under the pseudonym “Student”.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="T-table">T-table<a class="anchor-link" href="#T-table">&#182;</a></h2><ul>
+<li>On the appendix of your text book <strong>Statistics: The art and science of learning from data</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://statcao.github.io/teaching/t-table.pdf&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+        <iframe
+            width="800"
+            height="600"
+            src="https://statcao.github.io/teaching/t-table.pdf"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean">Confidence interval for the population mean<a class="anchor-link" href="#Confidence-interval-for-the-population-mean">&#182;</a></h2><ul>
+<li><p>Recall from the last lecture that the confidence interval (CI) for a population parameter is a collec-
+  tion of the most probable values of that parameter, and is of the form</p>
+
+<pre><code>      point estimate ± margin of error</code></pre>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean---the-recipe">Confidence interval for the population mean - the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean---the-recipe">&#182;</a></h2><ul>
+<li><p>CI for the population mean $\mu$, the point estimate is the sample mean $\bar{x}$,
+  and the <strong>margin of error</strong> is the <strong>standard error multiplied by a t-score</strong>.</p>
+</li>
+<li><p>Suppose we have a random sample of size $n$ with mean $bar{x}$ and standard deviation $s$, ...</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean---the-recipe">Confidence interval for the population mean - the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean---the-recipe">&#182;</a></h2><ul>
+<li>First, check the following assumptions:<ul>
+<li>The observations must be quantitative.</li>
+<li>If $n \geq 30$, go to the second step. Otherwise, continue checking.</li>
+<li>If $ n &lt; 30 $, then the observations must be normally distributed. (This is usually assumed to be true.)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean---the-recipe">Confidence interval for the population mean - the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean---the-recipe">&#182;</a></h2><ul>
+<li>Second, compute the standard error (se) through
+  $$ se = \frac{s}{\sqrt{n}}$$</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean---the-recipe">Confidence interval for the population mean - the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean---the-recipe">&#182;</a></h2><ul>
+<li><p>Third, find the t-score from the t-table according to the given confidence level and $df = n−1$. Then,
+  compute the margin of error (MOE) through
+  $$ MOE = t \times se $$</p>
+</li>
+<li><p>Fouth, the CI is given by</p>
+<p>$$CI = (\bar{x} − MOE, \bar{x} + MOE)$$</p>
+</li>
+<li><p>Fifth, <strong>the interpretation</strong>: we are ...% confident that the population mean is in between $\bar{x} − MOE$ and
+$\bar{x} + MOE$.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean">Hypothesis tesing on sample mean<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean">&#182;</a></h2><ul>
+<li><p>A hypothesis test that utilizes the t-distribution is usually referred to as a t-test.</p>
+</li>
+<li><p>Suppose we have a sample of size $n$ with sample mean $\mu$ and standard deviation $s$.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li>First, check the following assumptions:<ul>
+<li>The observations must be quantitative.</li>
+<li>If $n \geq 30$, go to the second step. Otherwise, continue checking.</li>
+<li>If $ n &lt; 30 $, then the observations must be normally distributed. (This is usually assumed to be true.)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li>Second, set up $H_0$ and Ha according to the table below. $H_a$ is the hypothesis of interest that the
+  population mean $\mu$ is within a particular range associated with some pre-conceived $\mu_0$, and
+  $H_0$ is the opposite of $H_a$.</li>
+</ul>
+<div align=center>
+<img src="./hypo.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li><p>Third, compute the test-statistic t^∗ through</p>
+<p>$$t^* = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}$$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li>Fouth step (the hard way), Based on $t^∗$ a given significance level $\alpha$, make a decision by comparing $t^∗$ to a certain t-score which we call critical value from the t-table.</li>
+</ul>
+<div align=center>
+    <img src="./t_rej.png"/>
+</div><ul>
+<li>The table provides the conditions for rejecting $H_0$ under the three different types of $H_a$. If the condition in the last column is not satisfied, we fail to reject $H_0$.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li>The table in previous slides looks scary, other approaches available?  --- <strong>YES</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---another-forth-step">Hypothesis tesing on sample mean - another forth step<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---another-forth-step">&#182;</a></h2><ul>
+<li>Forth step (the easier way), calculate p-value using statistical software (Stat Crunch, for this course).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing-on-sample-mean---the-recipe">Hypothesis tesing on sample mean - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-sample-mean---the-recipe">&#182;</a></h2><ul>
+<li>Fifth, draw conclusion by comparing the P-value to the significance level α.<ul>
+<li>If P-value &lt; $\alpha$, --&gt; <strong>reject</strong> $H_0$. There is sufficient evidence to support $H_a$ under $\alpha$ significance level.</li>
+<li>If P-value ≥ $\alpha$, --&gt; <strong>do not reject</strong> $H_0$. There is no sufficient evidence to support $H_a$ under $\alpha$ significance level.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice!">Practice!<a class="anchor-link" href="#Practice!">&#182;</a></h2>
 </div>
 </div>
 </div>
