@@ -59,4 +59,4 @@ Useful Links
 * [z-table](http://users.stat.ufl.edu/~athienit/Tables/Ztable.pdf)
 * [t-table](./t-table.pdf)  (Cutted from the appendix of Statistics: The art and science of learning from data)
 * [breaking distance dataset](./breaking_distance_data.txt)
-
+* [salt free diet](./salt_free_diet.txt)
