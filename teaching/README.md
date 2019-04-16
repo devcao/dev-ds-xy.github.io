@@ -60,3 +60,4 @@ Useful Links
 * [t-table](./t-table.pdf)  (Cutted from the appendix of Statistics: The art and science of learning from data)
 * [breaking distance dataset](./breaking_distance_data.txt)
 * [salt free diet dataset](./salt_free_diet.txt)
+* [ebay sales dataset](./ebay_sales.txt)
