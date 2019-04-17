@@ -13350,7 +13350,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on twp population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
+<h2 id="Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on two population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
 <li>First, check the following assumptions:<ul>
 <li>The sample of difference scores is a random sample from a population of such
   difference scores</li>
@@ -13368,7 +13368,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on twp population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
+<h2 id="Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on two population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
 <li>Second, set up the hypothesis.</li>
 </ul>
 $$
@@ -13393,10 +13393,12 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on twp population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
+<h2 id="Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">Hypothesis tesing on two population means with dependent samples - the recipe<a class="anchor-link" href="#Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe">&#182;</a></h2><ul>
 <li><p>Third, compute the test-statistic $t^∗$ through</p>
 <p>$$t^* = \frac{\bar{x}_d - 0}{s_d / \sqrt{n}}$$</p>
 <p>where $\bar{x}_d$ and $s_d$ are the sample mean and  sample standard deviation of the differences, respectively.</p>
+</li>
+<li><p>$df = n-1$</p>
 </li>
 </ul>
 
@@ -13407,7 +13409,7 @@ $$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe-(the-hard-way)">Hypothesis tesing on twp population means with dependent samples - the recipe (the hard way)<a class="anchor-link" href="#Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe-(the-hard-way)">&#182;</a></h2><ul>
-<li>Fouth step (the hard way), Based on $t^∗$ a given significance level $\alpha$, make a decision by comparing $t^∗$ to a certain t-score which we call critical value from the t-table.</li>
+<li>Fourth step (the hard way), Based on $t^∗$ a given significance level $\alpha$, make a decision by comparing $t^∗$ to a certain t-score which we call critical value from the t-table.</li>
 </ul>
 <div align=center>
     <img src="./two_tt.png"/>
@@ -13421,8 +13423,8 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe-(the-easier-way)">Hypothesis tesing on twp population means with dependent samples - the recipe (the easier way)<a class="anchor-link" href="#Hypothesis-tesing-on-twp-population-means-with-dependent-samples---the-recipe-(the-easier-way)">&#182;</a></h2><ul>
-<li><p>Forth step (the easier way), calculate p-value using statistical software (Stat Crunch, for this course).</p>
+<h2 id="Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe-(the-easier-way)">Hypothesis tesing on two population means with dependent samples - the recipe (the easier way)<a class="anchor-link" href="#Hypothesis-tesing-on-two-population-means-with-dependent-samples---the-recipe-(the-easier-way)">&#182;</a></h2><ul>
+<li><p>Fourth step (the easier way), calculate p-value using statistical software (Stat Crunch, for this course).</p>
 </li>
 <li><p>Fifth, draw conclusion by comparing the P-value to the significance level α.</p>
 <ul>
@@ -13438,7 +13440,7 @@ $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Confidence-interval-for-the-population-mean-difference--the-recipe">Confidence interval for the population mean difference- the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean-difference--the-recipe">&#182;</a></h2><ul>
+<h2 id="Confidence-interval-for-the-population-mean-difference-with-dependent-sample--the-recipe">Confidence interval for the population mean difference with dependent sample- the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean-difference-with-dependent-sample--the-recipe">&#182;</a></h2><ul>
 <li><p>Suppose $\bar{x}_d$ and $s_d$ are the sample mean and  sample standard deviation of the differences, respectively.</p>
 </li>
 <li><p>CI for $\mu_d = \mu_1 - \mu_2$ is given by</p>
@@ -13472,6 +13474,158 @@ $$<ul>
 <li>Now let us practice the paired t-test!</li>
 </ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Two-sample-inference-with-independent-design">Two sample inference with independent design<a class="anchor-link" href="#Two-sample-inference-with-independent-design">&#182;</a></h2><ul>
+<li><p>In clinical trials, individuals in the treatment group (sample $A$) and individuals in the placebo
+  group (sample $B$) are independent.</p>
+</li>
+<li><p>We usually assume that the quantitative observations are randomly sampled from two normally distributed populations.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="We-need-to-discuss-about-variance-first">We need to discuss about variance first<a class="anchor-link" href="#We-need-to-discuss-about-variance-first">&#182;</a></h2><ul>
+<li><p>$A \sim \mathcal{N}(\mu_A, \sigma^2_A)$, $B \sim \mathcal{N}(\mu_B, \sigma^2_B)$</p>
+</li>
+<li><p>There are four unknown parameters,
+  the two population means ($\mu_A$ and $\mu_B$) and the two population standard deviations ($\sigma_A$ and $\sigma_B$)</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="We-need-to-discuss-about-variance-first">We need to discuss about variance first<a class="anchor-link" href="#We-need-to-discuss-about-variance-first">&#182;</a></h2><ul>
+<li><p>If the two sample variances are close enough, we can assume $\sigma_A = \sigma_B$ and perform pooled inference (pooled t-test).</p>
+</li>
+<li><p>Otherwise, assume $\sigma_A \neq \sigma_B$ and perform unpooled t-test</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing----$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-=-\sigma_B$">Hypothesis tesing -  $\sigma_A \neq \sigma_B$ or $\sigma_A = \sigma_B$<a class="anchor-link" href="#Hypothesis-tesing----$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-=-\sigma_B$">&#182;</a></h2><ul>
+<li>First, check the following assumptions:<ul>
+<li>Quantitative variables + random sample</li>
+<li>Approximately normal population distributions for each group. This is mainly important for small sample sizes($&lt;30$). Make a graphical display of both samples and check for extreme skew or outliers.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing---$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-=-\sigma_B$">Hypothesis tesing - $\sigma_A \neq \sigma_B$ or $\sigma_A = \sigma_B$<a class="anchor-link" href="#Hypothesis-tesing---$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-=-\sigma_B$">&#182;</a></h2><ul>
+<li>Second, set up the hypothesis.</li>
+</ul>
+$$
+H_0: \mu_1-\mu_2 = 0
+$$$$
+\operatorname{Left\ tail:}
+H_a: \mu_1-\mu_2 &lt; 0,
+$$<p>or
+$$
+\operatorname{Right\ tail:}
+H_a: \mu_1-\mu_2 &gt; 0,
+$$
+or
+$$
+\operatorname{Two\ sided:}
+H_a: \mu_1-\mu_2 \neq 0
+$$</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing---if-assume-$\sigma_A-=-\sigma_B$--$\implies$--pooled-t-test">Hypothesis tesing - if assume $\sigma_A = \sigma_B$  $\implies$  pooled t-test<a class="anchor-link" href="#Hypothesis-tesing---if-assume-$\sigma_A-=-\sigma_B$--$\implies$--pooled-t-test">&#182;</a></h2><ul>
+<li><p>Third, compute the test-statistic $t^∗$ through</p>
+<p>$$t^* = \frac{(\bar{x}_1 - \bar{x}_2) - 0}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}$$</p>
+<p>where $\bar{x}_1$ and $\bar{x}_2$ are the sample mean of 2 groups; $s_1$ and $s_2$ are sample standard deviation of 2 groups, respectively.</p>
+</li>
+<li><p>$s_p$ is the pooled standard deviation, could be calculated using stat software. $t^*$ follows t-distribution with $df = n_1+n_2-2$.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing---if-assume-$\sigma_A-\neq-\sigma_B$-$\implies$-unpooled-t-test">Hypothesis tesing - if assume $\sigma_A \neq \sigma_B$ $\implies$ unpooled t-test<a class="anchor-link" href="#Hypothesis-tesing---if-assume-$\sigma_A-\neq-\sigma_B$-$\implies$-unpooled-t-test">&#182;</a></h2><ul>
+<li><p>Third, compute the test-statistic $t^∗$ through</p>
+<p>$$t^* = \frac{(\bar{x}_1 - \bar{x}_2) - 0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}$$</p>
+<p>where $\bar{x}_1$ and $\bar{x}_2$ are the sample mean of 2 groups; $s_1$ and $s_2$ are sample standard deviation of 2 groups, respectively.</p>
+</li>
+<li><p>Degree of freedom ($df$) could be obtained using stat software.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hypothesis-tesing---$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-\neq-\sigma_B$">Hypothesis tesing - $\sigma_A \neq \sigma_B$ or $\sigma_A \neq \sigma_B$<a class="anchor-link" href="#Hypothesis-tesing---$\sigma_A-\neq-\sigma_B$-or-$\sigma_A-\neq-\sigma_B$">&#182;</a></h2><ul>
+<li><p>Fourth step, calculate p-value using statistical software (Stat Crunch, for this course).</p>
+</li>
+<li><p>Fifth, draw conclusion by comparing the P-value to the significance level α.</p>
+<ul>
+<li>If P-value &lt; $\alpha$, --&gt; <strong>reject</strong> $H_0$. There is sufficient evidence to support $H_a$ under $\alpha$ significance level.</li>
+<li>If P-value ≥ $\alpha$, --&gt; <strong>do not reject</strong> $H_0$. There is no sufficient evidence to support $H_a$ under $\alpha$ significance level.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Confidence-interval-for-the-population-mean-difference-with-independent-sample--the-recipe">Confidence interval for the population mean difference with independent sample- the recipe<a class="anchor-link" href="#Confidence-interval-for-the-population-mean-difference-with-independent-sample--the-recipe">&#182;</a></h2><ul>
+<li><p>Suppose $\bar{x}_1$ and $\bar{x}_2$ are the sample mean of 2 groups; $s_1$ and $s_2$ are sample standard deviation of 2 groups, respectively.</p>
+</li>
+<li><p>CI for $ \mu_1 - \mu_2$ is given by</p>
+</li>
+</ul>
+$$
+(\bar{x}_1 - \bar{x}_2) \pm t\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}
+$$<ul>
+<li>Degree of freedom should be obtained from stat software.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="END">END<a class="anchor-link" href="#END">&#182;</a></h1>
 </div>
 </div>
 </div></section></section>
