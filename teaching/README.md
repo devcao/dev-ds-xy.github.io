@@ -30,20 +30,20 @@ Course Materials
 
 | Date | Slides | Notes |
 | ------------ | ------------- | -------------- |
-| Jan 14th | [Lecture 1 slides](./Chapter_1_2.slides.html) | [Lecture 1 notes](./Chapter_1_2.html) |
+| Jan 14th | [Descriptive Statisitcs](./Chapter_1_2.slides.html) | [Descriptive Statistics](./Chapter_1_2.html) |
 | Jan 21th | Holiday | Holiday |
-| Jan 28th | [Lecture 2 slides](./Chapter_3.slides.html) | [Lecture 2 notes](./Chapter_3.html) |
+| Jan 28th | [Descriptive Statisitcs - Association](./Chapter_3.slides.html) | [Descriptive Statisitcs - Association](./Chapter_3.html) |
 | Feb 4th | Review Exam 1 | Review Exam 1 |
-| Feb 13th | [Lecture 3 slides](./Chapter_5.slides.html) | [Lecture 3 notes](./Chapter_5.html) |
-| Feb 18th | [Lecture 4 slides](./Chapter_6.slides.html) | [Lecture 4 notes](./Chapter_6.html) |
+| Feb 13th | [Probability](./Chapter_5.slides.html) | [Probability](./Chapter_5.html) |
+| Feb 18th | [Probability Distribution](./Chapter_6.slides.html) | [Probability Distribution](./Chapter_6.html) |
 | Feb 25th | Review Exam 2 | Review Exam 2 |
-| Mar 6th | [Lecture 5 slides](./Chapter_7.slides.html) | [Lecture 5 notes](./Chapter_7.html) |
-| Mar 18th | [Lecture 6 slides](./Chapter_8&9.slides.html) | [Lecture 6 notes](./Chapter_8&9.html) |
-| Mar 25th | [Lecture 7 slides](./Chapter_8&9.slides.html) | [Lecture 7 notes](./Chapter_8&9.html) |
+| Mar 6th | [Sampling Distribution](./Chapter_7.slides.html) | [Sampling Distribution](./Chapter_7.html) |
+| Mar 18th | [One Sample Inference](./Chapter_8&9.slides.html) | [One Sample Inference](./Chapter_8&9.html) |
+| Mar 25th | [One Sample Inference](./Chapter_8&9.slides.html) | [One Sample Inference](./Chapter_8&9.html) |
 | Apr 1th | Review Exam 3 | Review Exam 3 |
-| Apr 8th | [Lecture 8 slides](./Chapter_8&9.slides.html) | [Lecture 8 notes](./Chapter_8&9.html) |
-| Apr 15th | [Lecture 9 slides](./Chapter_10.slides.html) | [Lecture 9 notes](./Chapter_10.html) |
-| Apr 22th | [Lecture 10 slides](./Chapter_10.slides.html) | [Lecture 10 notes](./Chapter_10.html) |
+| Apr 8th | [One Sample Inference](./Chapter_8&9.slides.html) | [One Sample Inference](./Chapter_8&9.html) |
+| Apr 15th | [Two Sample Inference](./Chapter_10.slides.html) | [Two Sample Inference](./Chapter_10.html) |
+| Apr 22th | [Two Sample Inference](./Chapter_10.slides.html) | [Two Sample Inference](./Chapter_10.html) |
 | Apr 29th | Review Final Exam  | Review Final Exam |
 
 
