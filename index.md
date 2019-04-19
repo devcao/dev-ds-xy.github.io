@@ -8,7 +8,7 @@ I am Xiangyang Cao, 3rd year PhD student in [Department of Statistics](https://s
 
 Prior to USC, I was an undergrad in mathematics at [Central University of Finance and Economics](http://en.cufe.edu.cn/).
 
-My reseach interest lies in High-dimensional inference and Statistical machine learning. 
+My reseach interest lies in High-dimensional inference and Statistical/interpretable machine learning. 
 I am currently working on:
 
 * A regularization path i.e, LASSO, SCAD, Elastic Net solution path and etc. related method to provide p-values for high-dimensional models.
