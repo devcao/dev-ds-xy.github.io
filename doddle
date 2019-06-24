@@ -94,26 +94,22 @@ ExtractLars.Path <- function(x, y, whichCov, betaNULL = 0){
   
   #### remove the unoverlapping part (test)
   
-  if(lambda.hat[1] != lambda.j.hat[1]){
-    
-    leftmost = c(lambda.hat[1], lambda.j.hat[1])
-    whichone = which.max(leftmost)
-    
-    if(whichone ==1){
-      
-      lambda.j.hat = lambda.j.hat[lambda.j.hat >= lambda.hat[1]]
-      lambda.j.hat = c(lambda.hat[1], lambda.j.hat)
-      
-    }else{
-      
-      lambda.hat = lambda.hat[lambda.hat >= lambda.j.hat[1]]
-      lambda.hat = c(lambda.j.hat[1], lambda.hat)
-      
-    }
-    
-    
-    
-  }
+  #if(lambda.hat[1] != lambda.j.hat[1]){
+  #  leftmost = c(lambda.hat[1], lambda.j.hat[1])
+  #  whichone = which.max(leftmost)
+  #  if(whichone ==1){
+  #    lambda.j.hat = lambda.j.hat[lambda.j.hat >= lambda.hat[1]]
+  #    lambda.j.hat = c(lambda.hat[1], lambda.j.hat)
+  #  }else{
+  #    lambda.hat = lambda.hat[lambda.hat >= lambda.j.hat[1]]
+  #    lambda.hat = c(lambda.j.hat[1], lambda.hat)
+  #  }
+  #}
+  
+  minLam = 1e-7
+  lambda.hat = lambda.hat[lambda.hat > minLam]
+  lambda.j.hat = lambda.hat[lambda.hat > minLam]
+  
   
   union.lambda <- sort(unique(c(lambda.hat,lambda.j.hat)), decreasing = FALSE)
   
@@ -316,6 +312,8 @@ ExtractNet.Path <- function(x, y, whichCov, betaNULL = 0, nlambda = 1000,  alpha
   return(list(union.lambda = union.lambda, beta.hat = beta.hat, beta.j.hat = beta.j.hat)) 
   
 }
+
+
 
 
 
