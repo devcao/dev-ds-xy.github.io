@@ -1,3 +1,15 @@
+import os
+from pdfminer.pdfparser import PDFParser
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfpage import PDFPage
+# From PDFInterpreter import both PDFResourceManager and PDFPageInterpreter
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfdevice import PDFDevice
+# Import this to raise exception whenever text extraction from PDF is not allowed
+from pdfminer.pdfpage import PDFTextExtractionNotAllowed
+from pdfminer.layout import LAParams, LTTextBox, LTTextLine
+from pdfminer.converter import PDFPageAggregator
+
 extracted_text = ""
 for page in PDFPage.create_pages(document):
     interpreter.process_page(page)
