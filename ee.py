@@ -1,3 +1,4 @@
+url = "https://www.groundai.com/project/bert-based-financial-sentiment-index-and-lstm-based-stock-return-predictability/"
 import os
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
