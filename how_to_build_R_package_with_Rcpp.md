@@ -1,6 +1,7 @@
 * First we claim
-current_dir = Your current directory
-pkg_name = The name of your package
+
+  - current_dir = Your current directory
+  - pkg_name = The name of your package
 
 * On an active R console, run
 ```
