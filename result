@@ -1,0 +1,25 @@
+> l0_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = 0, 
++                             iter=500, B=500, 
++                             whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.428 0.116 0.06 0.014 
+> l5_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = 0.5, 
++                            iter=500, B=500, 
++                            whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.246 0.104 0.062 0.016 
+> l9_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = 0.9, 
++                            iter=500, B=500, 
++                            whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.242 0.144 0.08 0.032 
+> lw_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = "equl", 
++                            iter=500, B=500, 
++                            whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.314 0.078 0.038 0.014 
+> le_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = "weak_equl", 
++                            iter=500, B=500, 
++                            whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.274 0.106 0.048 0.006 
+> l0_1000 = loco.power.curve(n = 100, p = 1000, s = 10, rho = 0, 
++                             iter=500, B=500, 
++                             whichCov = 1, betaNULL = 0, size_only = TRUE)
+Round:  1 Now runing for:  0 power is:  lm:  0.462 0.09 0.056 0.004 
+> 
