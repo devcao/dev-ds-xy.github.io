@@ -55,28 +55,32 @@ for(j in 1:p)
 # At the same time compute the "distance" between each leave-one-variable-out solution path and the all-variables solution path (still needs to be coded).
 
 
-par(mfrow=c(2,2),mar=c(0,0,0,0))
+par(mfrow=c(1,2),mar=c(0,0,0,0))
 
 
-
-for(j in 1:p)
+for(j in c(1,3))
   
 {
   
-  plot(NA,ylim=range(beta.J.hat,beta.hat),xlim=range(lambda.J.hat,lambda.hat),xaxt="n",yaxt="n")
-  
+  #plot(NA,ylim=range(beta.J.hat,beta.hat),xlim=range(lambda.J.hat,lambda.hat),xaxt="n",yaxt="n")
+  plot(NA,ylim=c(-0.1,1.5),xlim=range(lambda.J.hat,lambda.hat),xaxt="n",yaxt="n")
   
   for(k in 1:p)
     
   {
     #j=1;k=1
-    lines(beta.J.hat[,k,j]~lambda.J.hat[,j], lwd = 2, lty=3, col = "red")
-    
-    lines(beta.hat[,k]~c(lambda.hat,0),lwd = 2)
     xx = c(lambda.J.hat[,j], rev(c(lambda.hat,0)))
     yy = c(beta.J.hat[,k,j], rev(beta.hat[,k]))
-    polygon(xx, yy, col = "gray", border = NULL)
+    polygon(xx, yy, col = rgb(0,0,0,0.2), border = NA)
+    
+
+    lines(beta.J.hat[,k,j]~lambda.J.hat[,j], lwd = 2, lty = 2, col = "red")
+    
+    lines(beta.hat[,k]~c(lambda.hat,0), lwd = 2, col = "black")
+    
+    
+    
     
   }
-  
+
 }
